@@ -70,18 +70,18 @@
         android:fontFamily="@font/suit_regular"
         android:layout_marginEnd="20dp"/>
 
-    <Button
-        android:id="@+id/forgetPw_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00ff0000"
-        android:text="비밀번호를 잊어버리셨나요?"
-        android:fontFamily="@font/suit_regular"
-        android:textSize="14sp"
-        android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/input_pw"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginLeft="36sp"/>
+<!--    <Button-->
+<!--        android:id="@+id/forgetPw_btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#00ff0000"-->
+<!--        android:text="비밀번호를 잊어버리셨나요?"-->
+<!--        android:fontFamily="@font/suit_regular"-->
+<!--        android:textSize="14sp"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/input_pw"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:layout_marginLeft="36sp"/>-->
 
 
     <Button
