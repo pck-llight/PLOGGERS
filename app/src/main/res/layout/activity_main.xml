@@ -72,12 +72,6 @@
         android:layout_width="match_parent"
         android:layout_height="720dp"
         app:layout_constraintBottom_toBottomOf="parent">
-
-
-
     </androidx.recyclerview.widget.RecyclerView>
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
