@@ -62,9 +62,9 @@
             android:id="@+id/timerButton"
             android:layout_width="0dp"
             android:layout_height="60dp"
-            android:text="플로깅 마침"
+            android:text="시작"
             android:textSize="20sp"
-            android:layout_weight="7"
+            android:layout_weight="8"
             android:fontFamily="@font/suit_bold"
             android:background="@drawable/button"
             android:layout_marginEnd="30dp"/>
@@ -73,9 +73,9 @@
             android:id="@+id/resetButton"
             android:layout_width="0dp"
             android:layout_height="60dp"
-            android:layout_weight="4"
+            android:layout_weight="4.5"
             android:background="@drawable/button"
-            android:text="시간 초기화"
+            android:text="초기화"
             android:textSize="20sp"
             android:fontFamily="@font/suit_bold"
             />

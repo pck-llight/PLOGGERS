@@ -38,6 +38,9 @@ class plogging_timer : AppCompatActivity() {
 
 
     private fun start() {
+
+        binding.timerButton.setText("중지")
+
         timerTask = kotlin.concurrent.timer(period = 1000) {	// timer() 호출
             time++	// period=1000, 1초마다 time를 1씩 증가
             isRunning = true
@@ -53,6 +56,9 @@ class plogging_timer : AppCompatActivity() {
     }
 
     private fun pause() {
+
+        binding.timerButton.setText("시작")
+
         timerTask?.cancel()	// 안전한 호출(?.)로 timerTask가 null이 아니면 cancel() 호출
         isRunning = false
     }
