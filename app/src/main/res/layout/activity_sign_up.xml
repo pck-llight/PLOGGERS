@@ -31,6 +31,7 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/input_id"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -38,10 +39,12 @@
             android:hint="아이디를 입력해주세요"
             android:fontFamily="@font/suit_bold"
             android:textColorHint="@color/white"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:paddingLeft="20dp"/>
 
         <EditText
+            android:id="@+id/input_pw"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -49,11 +52,14 @@
             android:hint="비밀번호를 입력해주세요"
             android:fontFamily="@font/suit_bold"
             android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
             android:textSize="18sp"
             android:layout_marginTop="35dp"
             android:paddingLeft="20dp"/>
 
         <EditText
+            android:id="@+id/input_pw_again"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -61,11 +67,14 @@
             android:hint="비밀번호를 다시 입력해주세요"
             android:fontFamily="@font/suit_bold"
             android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
             android:textSize="18sp"
             android:layout_marginTop="35dp"
             android:paddingLeft="20dp"/>
 
         <EditText
+            android:id="@+id/input_hometown"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -73,11 +82,13 @@
             android:hint="활동하는 동네를 입력해주세요"
             android:fontFamily="@font/suit_bold"
             android:textColorHint="@color/white"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:layout_marginTop="35dp"
             android:paddingLeft="20dp"/>
 
         <EditText
+            android:id="@+id/input_name"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -85,11 +96,13 @@
             android:hint="이름을 입력해주세요"
             android:fontFamily="@font/suit_bold"
             android:textColorHint="@color/white"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:layout_marginTop="35dp"
             android:paddingLeft="20dp"/>
 
         <Button
+            android:id="@+id/nextbtn"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="120dp"

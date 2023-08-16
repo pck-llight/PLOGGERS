@@ -18,9 +18,10 @@ class login : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        db = FirebaseFirestore.getInstance()
         val intentmain = Intent(this, MainActivity::class.java)
         val intentsignup = Intent(this, sign_up::class.java)
+        db = FirebaseFirestore.getInstance()
+
 
         binding.signInBtn.setOnClickListener() {
             startActivity(intentsignup)
