@@ -7,12 +7,6 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:id="@+id/menu_top"
-        app:layout_constraintTop_toTopOf="parent"
-        android:padding="15dp">
 
         <TextView
             android:id="@+id/my_environmentalScore"
@@ -24,7 +18,8 @@
             android:fontFamily="@font/suit_bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="15dp"
             />
 
         <Button
@@ -36,9 +31,9 @@
             android:textSize="16sp"
             android:fontFamily="@font/suit_bold"
             app:layout_constraintStart_toEndOf="@id/my_environmentalScore"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@id/my_environmentalScore"
             android:layout_marginLeft="12sp"
+            android:layout_marginTop="-7dp"
 
             />
 
@@ -48,10 +43,9 @@
             android:layout_height="34dp"
             android:background="@drawable/notice1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@id/timerStartButton"
             tools:ignore="SpeakableTextPresentCheck"
-
+            android:layout_marginEnd="10dp"
             />
         <Button
             android:id="@+id/settingsButton"
@@ -59,8 +53,7 @@
             android:layout_height="34dp"
             android:background="@drawable/settings"
             app:layout_constraintEnd_toStartOf="@id/noticeButton"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@id/noticeButton"
             tools:ignore="SpeakableTextPresentCheck"
             android:layout_marginRight="7dp"
             />
@@ -70,34 +63,21 @@
             android:layout_height="30dp"
             android:background="@drawable/write_button"
             app:layout_constraintEnd_toStartOf="@id/settingsButton"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@id/noticeButton"
             tools:ignore="SpeakableTextPresentCheck"
             android:layout_marginRight="7dp"
             />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/menu_top"
-        >
+        android:layout_height="720dp"
+        app:layout_constraintBottom_toBottomOf="parent">
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="예시문구\n예시문구\n예시문구\n예시문구\n예시문구\n예시문구\n예시문구\n예시문구\n예시문구\n예시문구\n예시문구\n예시문구\n예시문구\n예시문구\n예시문구\n예시문구\n예시문구\n예시문구"
-                android:textColor="@color/white"
-                android:textSize="40sp"
-                android:fontFamily="@font/suit_bold"/>
 
-        </LinearLayout>
-    </ScrollView>
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
