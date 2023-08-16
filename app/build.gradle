@@ -11,12 +11,11 @@ android {
     namespace 'com.example.ploggers'
     compileSdk 33
 
-<<<<<<< HEAD
-=======
+
     buildFeatures {
         viewBinding = true
     }
->>>>>>> 49bc9daa13382a3f7e6385aae564279a73b175cc
+
 
     defaultConfig {
         applicationId "com.example.ploggers"
@@ -40,9 +39,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
-    }
-    buildFeatures {
-        viewBinding true
     }
 }
 
