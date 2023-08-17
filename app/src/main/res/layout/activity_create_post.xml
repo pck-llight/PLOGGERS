@@ -52,8 +52,8 @@
 
     <Button
         android:id="@+id/btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="52dp"
         android:background="@drawable/button"
         android:text="공유"
         android:textColor="@color/black"
@@ -61,6 +61,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text1"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="40dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
