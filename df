@@ -1,0 +1,262 @@
+[33mcommit c7a2b87b96fd010a2f2d386e70361c0a631cb21f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: skwpwns <129128579+skwpwns@users.noreply.github.com>
+Date:   Thu Aug 17 00:49:42 2023 +0900
+
+    회원가입 창 파이어베이스 연동 XML 버그 수정
+
+[33mcommit c39f9cb068094c70329b2ee73b09ba6f652781d1[m
+Author: skwpwns <129128579+skwpwns@users.noreply.github.com>
+Date:   Wed Aug 16 23:45:29 2023 +0900
+
+    파이어베이스 연동 XML 오류 수정
+
+[33mcommit 5d48d28af377991377fc552bea2abcc5c1d45a91[m
+Merge: 618d380 419501a
+Author: skwpwns <129128579+skwpwns@users.noreply.github.com>
+Date:   Wed Aug 16 19:33:25 2023 +0900
+
+    수정
+
+[33mcommit 618d380ca0b3332fd0a9da20837f723fc100450b[m
+Author: skwpwns <129128579+skwpwns@users.noreply.github.com>
+Date:   Wed Aug 16 19:08:32 2023 +0900
+
+    fix:이슈게이 수정
+
+[33mcommit 419501af0f312a18446c52b65e89e6095946b258[m
+Author: pck-llight <23sunrin113@sunrint.hs.kr>
+Date:   Wed Aug 16 19:08:19 2023 +0900
+
+    fix
+
+[33mcommit b4543023a9711fd42186da643bbaf42457629b28[m
+Merge: a01b723 49bc9da
+Author: skwpwns <129128579+skwpwns@users.noreply.github.com>
+Date:   Wed Aug 16 18:45:30 2023 +0900
+
+    feat: XML 수정, 타이머 기능, 부속 기능
+
+[33mcommit a01b72364eb09c84326901f92a428892662f3c86[m
+Author: skwpwns <129128579+skwpwns@users.noreply.github.com>
+Date:   Wed Aug 16 18:30:54 2023 +0900
+
+    feat: 타이머 기능, 레아이웃 수정 부속기능 등
+
+[33mcommit 49bc9daa13382a3f7e6385aae564279a73b175cc[m
+Author: ll-chankyu <23sunrin113@sunrint.hs.kr>
+Date:   Wed Aug 16 14:50:20 2023 +0900
+
+    타이머 기능 수정
+
+[33mcommit c6fcfe00b00a27f41e5d86ee8ff04a1bbbbd4dee[m
+Author: ll-chankyu <23sunrin113@sunrint.hs.kr>
+Date:   Wed Aug 16 14:31:20 2023 +0900
+
+    타이머 기능 수정
+
+[33mcommit c9a9e6d210d0ff115fd021b1b0db498ad2fcf5e8[m
+Author: ll-chankyu <23sunrin113@sunrint.hs.kr>
+Date:   Wed Aug 16 14:12:03 2023 +0900
+
+    타이머 기능
+
+[33mcommit eabdab79e2e5375155abee43c07cab4b75d1a941[m
+Author: pck-llight <23sunrin113@sunrint.hs.kr>
+Date:   Wed Aug 16 11:12:15 2023 +0900
+
+    타이머 구현중
+
+[33mcommit 03f15a05251ecc49a02e0df121f3f172b27802bf[m
+Author: JH612 <jaehee1717612@gmail.com>
+Date:   Fri Aug 11 11:30:50 2023 +0900
+
+    XML activity file 추가
+
+[33mcommit f9469cb590315307ca86693e03ef81a88b2c638e[m
+Author: pck-llight <23sunrin113@sunrint.hs.kr>
+Date:   Thu Aug 10 19:30:48 2023 +0900
+
+    메인 피드 화면XML
+
+[33mcommit dc26b8d16dee9a713519a8192fbfa133ed83d290[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 9 07:28:00 2023 +0900
+
+    플로깅 후 쓰레기 양 입력 화면 XML
+
+[33mcommit 247e0b257e07c5d23cc29004a8f1dbf3792a7740[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 9 07:17:26 2023 +0900
+
+    플로깅 마침 화면 XML
+
+[33mcommit f90b8c9e6234ff703369835439767f7eb41a715e[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 9 06:52:13 2023 +0900
+
+    플로깅 진행 화면(타이머 화면)
+
+[33mcommit 898602a1f09d423f94a643ddbb0d9adefca061bd[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 9 05:49:42 2023 +0900
+
+    게시물 작성 XML
+
+[33mcommit 71de6b43915d87487822179adee5bbd0ddcaa564[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 9 05:33:10 2023 +0900
+
+    나의 프로필 화면
+
+[33mcommit ab490b1603270d13dbff61f11b9a72f923e52c59[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 9 05:25:57 2023 +0900
+
+    내 프로필 화면
+
+[33mcommit d0f148c1a0e03b09428c733bde3fa5c9d3acb31c[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 9 05:19:57 2023 +0900
+
+    activity_my_profile.xml
+
+[33mcommit 8af3b55eec527e008d5dd101028e37b4f6dbfc2f[m
+Merge: d90184b 258fadf
+Author: JH612 <jaehee1717612@gmail.com>
+Date:   Wed Aug 9 04:27:49 2023 +0900
+
+    수정
+
+[33mcommit d90184b0c14b96c7ad04683c203f189aa4216653[m
+Author: JH612 <jaehee1717612@gmail.com>
+Date:   Wed Aug 9 04:18:58 2023 +0900
+
+    내 정보화면, 설정, 내 프로필 수정
+
+[33mcommit 258fadfd0cd57d8fb8b88ddc3d881ae8be6a328f[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 9 04:07:37 2023 +0900
+
+    activity_my_information.xml 최종본 수정
+
+[33mcommit 952e2a71204bd5a2a8c1cd213c4f646d93e51d0d[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 9 04:06:23 2023 +0900
+
+    activity_setting.xml (방프에서 사용 X)
+
+[33mcommit ee7dbbdc749c66748eb922262532c682b3e0b767[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 9 03:50:33 2023 +0900
+
+    activity_my_information.xml 수정
+
+[33mcommit c9ec331143143d149922ef6ca2bb8b7273948936[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 9 03:36:10 2023 +0900
+
+    activity_my_information.xml 최종본으로 수정
+
+[33mcommit af47e8d54ab6e5e9cbd609661a637aeb4a3922eb[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 9 03:32:26 2023 +0900
+
+    activity_my_information.xml margin 수정
+
+[33mcommit 64a66bb12482c1827fda8807bfd02b508f30ac57[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 9 03:29:01 2023 +0900
+
+    activity_my_information.xml margin 수정
+
+[33mcommit 2a1cb86ed4147e8feedcb8a965b9568ab8fc22c4[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 9 03:15:25 2023 +0900
+
+    activity_my_information.xml 수정
+
+[33mcommit 25ede424eecf4def585cd1b57ed3b2310334248f[m
+Author: pck-llight <23sunrin113@sunrint.hs.kr>
+Date:   Sun Aug 6 21:59:08 2023 +0900
+
+    아이콘 추가(설정, 알림, 글쓰기 버튼), 메인화면
+
+[33mcommit 1a02f81d643cb6ea10ca732f2686e3b91ebdb6b2[m
+Author: pck-llight <23sunrin113@sunrint.hs.kr>
+Date:   Sun Aug 6 19:13:52 2023 +0900
+
+    메뉴바 제거
+
+[33mcommit dcc7f846faee45771f285e78e762f56936d0c92d[m
+Author: pck-llight <23sunrin113@sunrint.hs.kr>
+Date:   Sun Aug 6 18:40:53 2023 +0900
+
+    몇 개의 화면 제거
+
+[33mcommit 45f2d01b6d538f97968a116191a13ea00726e5c7[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 2 09:17:46 2023 +0900
+
+    카페 가입 화면
+
+[33mcommit 38eb12fe83d5b5df31474047e36d8456552de76f[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 2 09:13:12 2023 +0900
+
+    Update activity_physicalinformation.xml
+
+[33mcommit f9ca72dcb147ec6a1ca695934d0359d8d5f1a7af[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 2 08:59:05 2023 +0900
+
+    신체정보화면 xml
+
+[33mcommit ea1b9bf9bc79976e2b7a0ca7d6e793056dee310a[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 2 08:58:36 2023 +0900
+
+    Delete activity_physicalinformation.xml
+
+[33mcommit cb4e7df97837ecf54ab1992da74ff540cdfe6c16[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Wed Aug 2 08:58:13 2023 +0900
+
+    신체정보화면 xml
+
+[33mcommit f6c3908b3539e7f7181bb1a14df6716e2ca091bc[m
+Author: JH612 <jaehee1717612@gmail.com>
+Date:   Tue Aug 1 23:03:20 2023 +0900
+
+    Delete deploymentTargetDropDown.xml
+
+[33mcommit 80ac61caa96d89f36e4781eb7add618c2c6b7cb9[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Tue Aug 1 18:35:56 2023 +0900
+
+    Update activity_setting.xml
+
+[33mcommit c513b6227cb489487cf837178caeccc897c1a8c5[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Tue Aug 1 18:34:53 2023 +0900
+
+    설정 화면
+
+[33mcommit 6dc98e4086f02334b739b33502d80f69b69fff76[m
+Author: JH612 <130197262+JH612@users.noreply.github.com>
+Date:   Tue Aug 1 17:52:38 2023 +0900
+
+    내 정보 화면
+
+[33mcommit eef473ef818417b124200b3dfb82a4071acdad4d[m
+Author: pck-llight <23sunrin113@sunrint.hs.kr>
+Date:   Mon Jul 31 21:29:22 2023 +0900
+
+    메뉴바 아이콘 XML, 메뉴바 구현
+
+[33mcommit 05b5dcca60d587578626b32b5612282dea6cc2f7[m
+Author: pck-llight <23sunrin113@sunrint.hs.kr>
+Date:   Mon Jul 31 10:58:45 2023 +0900
+
+    비밀번호 찾기 화면 XML
+
+[33mcommit 5a6fe35edc5285ab2a3494f
