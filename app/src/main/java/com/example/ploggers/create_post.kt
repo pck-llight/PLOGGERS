@@ -26,7 +26,7 @@ import java.util.zip.Inflater
 class create_post : AppCompatActivity() {
 
     private lateinit var binding: ActivityCreatePostBinding
-
+    private lateinit var db: FirebaseFirestore
     lateinit var imageIv: ImageView
     lateinit var textEt: EditText
 
@@ -36,6 +36,14 @@ class create_post : AppCompatActivity() {
     lateinit var firestore: FirebaseFirestore
 
     val REQ_GALLERY = 1
+    val pickMultipleMedia =
+        registerForActivityResult(ActivityResultContracts.PickMultipleVisualMedia(5)) { uris ->
+            if (uris.isNotEmpty()) {
+                Log.d("PhotoPicker", "Number of items selected: ${uris.size}")
+            } else {
+                Log.d("PhotoPicker", "No media selected")
+            }
+        }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,23 +51,29 @@ class create_post : AppCompatActivity() {
         setContentView(R.layout.activity_create_post)
         binding = ActivityCreatePostBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        db = FirebaseFirestore.getInstance()
 
         storage = FirebaseStorage.getInstance()
         firestore = FirebaseFirestore.getInstance()
 
         binding.img1.setOnClickListener() {
-
+            pickMultipleMedia.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageAndVideo))
         }
 
-//         val pickMultipleMedia =
-//            registerForActivityResult(ActivityResultContracts.PickMultipleVisualMedia(5)) { uris ->
-//                if (uris.isNotEmpty()) {
-//                    Log.d("PhotoPicker", "Number of items selected: ${uris.size}")
-//                } else {
-//                    Log.d("PhotoPicker", "No media selected")
-//                }
-//            }
-//        pickMultipleMedia.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageAndVideo))
+        val input : String = binding.text1.toString()
+
+        binding.btn.setOnClickListener() {
+            upload(input)
+        }
+
+    }
+
+    fun upload(input: String){
+        var story = hashMapOf <String, String> (
+            "input" to input
+        )
+        db.collection("story").document("userstory")
+            .set(story)
     }
 
 //    private fun selectGallery(){

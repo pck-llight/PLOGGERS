@@ -38,13 +38,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/profileImageView" />
 
-    <TextView
+    <EditText
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="내용을 입력하세요.\n\n\nex) 나의 플로깅 루트 공유, 플로깅 후기, \n플로깅 키트 정보 등"
+        android:hint="내용을 입력하세요.\n\n\nex) 나의 플로깅 루트 공유, 플로깅 후기, \n플로깅 키트 정보 등"
         android:textSize="20sp"
+        android:textColorHint="@color/white"
         android:textColor="@color/white"
+        android:fontFamily="@font/suit_medium"
+        android:maxLines="5"
         app:layout_constraintTop_toBottomOf="@id/img1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
