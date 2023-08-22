@@ -1,13 +1,21 @@
 package com.example.ploggers
 
+import android.content.Intent
+import android.content.pm.PackageManager
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.ContactsContract
 import android.provider.ContactsContract.Contacts.Photo
+import android.provider.MediaStore
+import android.util.Log
 import android.view.LayoutInflater
 import android.widget.EditText
 import android.widget.ImageView
+import androidx.activity.result.PickVisualMediaRequest
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import com.example.ploggers.databinding.ActivityCreatePostBinding
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
@@ -26,6 +34,10 @@ class create_post : AppCompatActivity() {
 
     lateinit var storage: FirebaseStorage
     lateinit var firestore: FirebaseFirestore
+
+    val REQ_GALLERY = 1
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_post)
@@ -36,25 +48,39 @@ class create_post : AppCompatActivity() {
         firestore = FirebaseFirestore.getInstance()
 
         binding.img1.setOnClickListener() {
-            if (selectImage != null) {
-                var fileName =
-                    SimpleDateFormat("yyyyMMddHHmmss").format(Date()) // 파일명이 겹치면 안되기 떄문에 시년월일분초 지정
-                storage.getReference().child("image").child(fileName)
-                    .putFile(selectImage!!)//어디에 업로드할지 지정
-                    .addOnSuccessListener { taskSnapshot -> // 업로드 정보를 담는다
-                        taskSnapshot.metadata?.reference?.downloadUrl?.addOnSuccessListener { it ->
-                            var imageUrl = it.toString()
-                            val photo = Photo(textEt.text.toString(), imageUrl)
-                            firestore.collection("photo")
-                                .document().set(photo)
-                                .addOnSuccessListener {
-                                    finish()
-                                }
-                        }
-                    }
-            }
 
         }
 
+         val pickMultipleMedia =
+            registerForActivityResult(ActivityResultContracts.PickMultipleVisualMedia(5)) { uris ->
+                if (uris.isNotEmpty()) {
+                    Log.d("PhotoPicker", "Number of items selected: ${uris.size}")
+                } else {
+                    Log.d("PhotoPicker", "No media selected")
+                }
+            }
+        pickMultipleMedia.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageAndVideo))
     }
+
+//    private fun selectGallery(){
+//        val readPermission = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_MEDIA_IMAGES)
+//
+//        //권한 확인
+//        if(readPermission == PackageManager.PERMISSION_DENIED){
+//            // 권한 요청
+//            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_MEDIA_IMAGES), REQ_GALLERY)
+//
+//        }else{
+//            // 권한이 있는 경우 갤러리 실행
+//            val intent = Intent(Intent.ACTION_PICK)
+//            // intent의 data와 type을 동시에 설정하는 메서드
+//            intent.setDataAndType(
+//                MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+//                "image/*"
+//            )
+//
+//            imageResult.launch(intent)
+//        }
+//    }
+
 }
