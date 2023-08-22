@@ -60,21 +60,21 @@ class create_post : AppCompatActivity() {
             pickMultipleMedia.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageAndVideo))
         }
 
-        val input : String = binding.text1.toString()
-
-        binding.btn.setOnClickListener() {
-            upload(input)
-        }
+//        val input : String = binding.text1.toString()
+//
+//        binding.btn.setOnClickListener() {
+//            upload(input)
+//        }
 
     }
 
-    fun upload(input: String){
-        var story = hashMapOf <String, String> (
-            "input" to input
-        )
-        db.collection("story").document("userstory")
-            .set(story)
-    }
+//    fun upload(input: String){
+//        var story = hashMapOf <String, String> (
+//            "input" to input
+//        )
+//        db.collection("story").document("userstory")
+//            .set(story)
+//    }
 
 //    private fun selectGallery(){
 //        val readPermission = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_MEDIA_IMAGES)
