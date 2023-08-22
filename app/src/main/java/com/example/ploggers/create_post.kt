@@ -51,15 +51,15 @@ class create_post : AppCompatActivity() {
 
         }
 
-         val pickMultipleMedia =
-            registerForActivityResult(ActivityResultContracts.PickMultipleVisualMedia(5)) { uris ->
-                if (uris.isNotEmpty()) {
-                    Log.d("PhotoPicker", "Number of items selected: ${uris.size}")
-                } else {
-                    Log.d("PhotoPicker", "No media selected")
-                }
-            }
-        pickMultipleMedia.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageAndVideo))
+//         val pickMultipleMedia =
+//            registerForActivityResult(ActivityResultContracts.PickMultipleVisualMedia(5)) { uris ->
+//                if (uris.isNotEmpty()) {
+//                    Log.d("PhotoPicker", "Number of items selected: ${uris.size}")
+//                } else {
+//                    Log.d("PhotoPicker", "No media selected")
+//                }
+//            }
+//        pickMultipleMedia.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageAndVideo))
     }
 
 //    private fun selectGallery(){
