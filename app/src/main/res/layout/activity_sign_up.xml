@@ -31,7 +31,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/input_id"
+            android:id="@+id/idinput"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -44,7 +44,7 @@
             android:paddingLeft="20dp"/>
 
         <EditText
-            android:id="@+id/input_pw"
+            android:id="@+id/pwinput"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"

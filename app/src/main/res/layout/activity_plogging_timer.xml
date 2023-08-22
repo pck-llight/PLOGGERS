@@ -85,6 +85,7 @@
 
 
     <Button
+        android:id="@+id/nextbutton"
         android:layout_width="160dp"
         android:layout_height="80dp"
         android:background="@drawable/button"

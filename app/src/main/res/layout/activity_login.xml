@@ -31,7 +31,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/input_id"
+            android:id="@+id/inputId"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"

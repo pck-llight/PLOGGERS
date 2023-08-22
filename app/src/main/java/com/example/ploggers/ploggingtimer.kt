@@ -1,5 +1,6 @@
 package com.example.ploggers
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -37,7 +38,14 @@ class ploggingtimer : AppCompatActivity() {
         binding.endbtn.setOnClickListener {
             resetTimer()
         }
+
+        binding.nextbutton.setOnClickListener() {
+            val intent = Intent(this, plogging_end::class.java)
+            startActivity(intent)
+        }
     }
+
+
 
     private fun startTimer() {
         time--
