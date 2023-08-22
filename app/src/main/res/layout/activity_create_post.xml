@@ -31,12 +31,12 @@
         android:id="@+id/img1"
         android:layout_width="350dp"
         android:layout_height="350dp"
+        android:layout_marginTop="20dp"
         android:text="+\n사진 첨부"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profileImageView"
-        android:layout_marginTop="20dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileImageView" />
 
     <TextView
         android:id="@+id/text1"
