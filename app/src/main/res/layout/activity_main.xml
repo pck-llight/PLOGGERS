@@ -8,71 +8,70 @@
     tools:context=".MainActivity">
 
 
-        <TextView
-            android:id="@+id/my_environmentalScore"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="나의 환경 점수: 0"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:fontFamily="@font/suit_bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="23dp"
-            android:layout_marginLeft="15dp"
-            />
+    <TextView
+        android:id="@+id/my_environmentalScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/suit_bold"
+        android:text="나의 환경 점수: 0"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/timerStartButton"
-            android:layout_width="70dp"
-            android:layout_height="35dp"
-            android:background="@drawable/timerbutton"
-            android:text="시작하기"
-            android:textSize="16sp"
-            android:fontFamily="@font/suit_bold"
-            app:layout_constraintStart_toEndOf="@id/my_environmentalScore"
-            app:layout_constraintTop_toTopOf="@id/my_environmentalScore"
-            android:layout_marginLeft="12sp"
-            android:layout_marginTop="-7dp"
+    <Button
+        android:id="@+id/timerStartButton"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="12sp"
+        android:layout_marginTop="-7dp"
+        android:background="@drawable/timerbutton"
+        android:fontFamily="@font/suit_bold"
+        android:text="시작하기"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/my_environmentalScore"
+        app:layout_constraintTop_toTopOf="@id/my_environmentalScore"
 
-            />
+        />
 
-        <Button
-            android:id="@+id/noticeButton"
-            android:layout_width="34dp"
-            android:layout_height="34dp"
-            android:background="@drawable/notice1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/timerStartButton"
-            tools:ignore="SpeakableTextPresentCheck"
-            android:layout_marginEnd="10dp"
-            />
-        <Button
-            android:id="@+id/settingsButton"
-            android:layout_width="34dp"
-            android:layout_height="34dp"
-            android:background="@drawable/settings"
-            app:layout_constraintEnd_toStartOf="@id/noticeButton"
-            app:layout_constraintTop_toTopOf="@id/noticeButton"
-            tools:ignore="SpeakableTextPresentCheck"
-            android:layout_marginRight="7dp"
-            />
-        <Button
-            android:id="@+id/writeButton"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/writebutton"
-            app:layout_constraintEnd_toStartOf="@id/settingsButton"
-            app:layout_constraintTop_toTopOf="@id/noticeButton"
-            tools:ignore="SpeakableTextPresentCheck"
-            android:layout_marginRight="7dp"
-            />
+    <Button
+        android:id="@+id/noticeButton"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/notice1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/timerStartButton"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/settings"
+        app:layout_constraintEnd_toStartOf="@id/noticeButton"
+        app:layout_constraintTop_toTopOf="@id/noticeButton"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/writeButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/writebutton"
+        app:layout_constraintEnd_toStartOf="@id/settingsButton"
+        app:layout_constraintTop_toTopOf="@id/noticeButton"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/post"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
-        app:layout_constraintTop_toBottomOf="@id/timerStartButton"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:layout_height="750dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/timerStartButton">
 
     </androidx.recyclerview.widget.RecyclerView>
 </androidx.constraintlayout.widget.ConstraintLayout>
